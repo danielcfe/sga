@@ -1,0 +1,29 @@
+div,span,ul,li,body,h1{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:'arial','helvetica','san-serif';
+}
+@header_heigth: 50px;
+#header{
+	min-width: 960px;
+	height: @header_heigth;
+	h1{
+		line-height: @header_heigth;
+	}
+	img,h1,nav,ul{
+		vertical-align: top;
+		display:inline-block;
+	}
+	nav>ul{
+		li {
+			display: inline-block;
+			a{
+				padding: 20px 10px;
+				height: @header_heigth;
+				line-height: @header_heigth;
+			}
+		}
+	}
+}
