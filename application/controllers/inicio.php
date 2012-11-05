@@ -4,8 +4,6 @@ class Inicio extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->helper('html');
-		$this->load->helper('url');
 	}
 
 	/**
@@ -26,7 +24,7 @@ class Inicio extends CI_Controller {
 	public function index()
 	{
 		$data = [
-			'page' => 'login.php'];
+			'page' => 'layout/home.php'];
 		$this->load->view('layout',$data);
 	}
 }
