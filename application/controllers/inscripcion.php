@@ -6,10 +6,27 @@ class Inscripcion  extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('html');
 		$this->load->helper('form');
+		
+		$this->load->helper('url');
 	}
 	public function index(){
-		$data = [
-		'page' => 'inscripcion_template.php'];
+		$data = array(
+			'page' => 'inscripcion_template.php'
+			)
+		
+		$this->load->view('layout',$data);
+	}
+	public function nuevo_ano()
+	{
+
+	}
+
+	public function alumno()
+	{
+		$data = array(
+			'page' => 'inscripcion_template.php'
+			)
+		
 		$this->load->view('layout',$data);
 	}
 	public function form(){

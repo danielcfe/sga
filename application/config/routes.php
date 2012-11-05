@@ -39,8 +39,7 @@
 */
 //$route['inscripcion/register'] = 'inscripcion/register';
 
-$route['inscripcion/[:any]'] = 'inscripcion/form';
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "inicio";
 $route['404_override'] = '';
 
 
