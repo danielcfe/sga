@@ -33,7 +33,7 @@ class Estudiante extends CI_Model {
     array(
       'direct' => array('nombres','apellidos','edad','lugar_nacimiento','direccion','fecha_nacimiento'),
       'number_format' => array('cedula'),
-      'telf_format' => array('teleono'),
+      'telf_format' => array('telefono'),
       'object_array' => array('medicamentos','representantes_legal','inscripciones','')
     )
 }

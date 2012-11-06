@@ -23,8 +23,8 @@ class Inicio extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data = [
-			'page' => 'layout/home.php'];
+		$data = array(
+			'page' => 'layout/home.php');
 		$this->load->view('layout',$data);
 	}
 }

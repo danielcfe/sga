@@ -25,8 +25,8 @@ class Inscripcion  extends CI_Controller {
 		$this->load->view('layout',$data);
 	}
 	public function form(){
-		$data = [
-		'page' => 'inscripcion_template.php'];
+		$data = array(
+		'page' => 'inscripcion_template.php');
 		$this->load->view('layout',$data);	
 	}
 }
