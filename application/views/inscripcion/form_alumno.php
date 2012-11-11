@@ -1,3 +1,5 @@
+<h2>Datos del alumno</h2>
+
 <div class="control-group">
   <label class="control-label" for="alumno[nombres]">Nombres</label>
   <div class="controls">

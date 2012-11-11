@@ -1,3 +1,4 @@
+<h2>Representante</h2>
 <div class="control-group">
   <label class="control-label" for="represent[nombres]">Nombres</label>
   <div class="controls">

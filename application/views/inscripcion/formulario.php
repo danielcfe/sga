@@ -1,30 +1,23 @@
 <?= form_open('inscripcion/registrar',array('class'=>'form-horizontal'));?>
-  <? include 'form_alumno.php' ?>
-  <hr>
+  <div id='data_form'>
+    <? include 'form_alumno.php' ?>
 
-  <div class="control-group">
-    <div class="controls">
-      <button class="btn" type='button'>Agregar Representante</button>
+    <div class="btn-group">
+      <button class="btn show" type='button' data-template='#template_representante'>Agregar Representante</button>
+      <button class="btn show" type='button' data-template='#template_medicamento'>Agregar Medicamento</button>
     </div>
+  
   </div>
-
-  <script type='text/template' id='template_representante'>
-    <? include 'form_representante.php' ?>
-  </script>
-
-  <hr>
-  <div class="control-group">
-    <div class="controls">
-      <button class="btn" type='button'>Agregar Medicamento</button>
-    </div>
-  </div>
-  <script type='text/template' id='template_medicamento'>
-    <? include 'form_medicamento.php' ?>
-  </script>
-
   <div class="control-group">
     <div class="controls">
       <button type="submit" class="btn">Finalizar Registro</button>
     </div>
   </div>
 <?= form_close()?>
+<script type='text/template' id='template_representante'>
+  <? include 'form_representante.php' ?>
+</script>
+
+<script type='text/template' id='template_medicamento'>
+  <? include 'form_medicamento.php' ?>
+</script>

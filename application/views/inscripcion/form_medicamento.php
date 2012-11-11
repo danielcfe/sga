@@ -1,3 +1,4 @@
+<h2> Medicamento </h2>
 <div class="control-group">
   <label class="control-label" for="medicamento[nombre]">Nombre</label>
   <div class="controls">
