@@ -1,21 +1,21 @@
 <div class="control-group">
   <label class="control-label" for="represent[nombres]">Nombres</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id='represent[nombres]' name='represent[nombres]' placeholder="nombres">
+    <input class="input-xlarge" type="text" id='represent[nombres]' name='represent[nombres]' value='<?= $represent['nombres']?>' placeholder="nombres">
   </div>
 </div>
 
 <div class="control-group">
   <label class="control-label" for="represent[apellidos]">Apellidos</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="represent[apellidos]" id="represent[apellidos]" placeholder="Apellidos">
+    <input class="input-xlarge" type="text" id="represent[apellidos]" id="represent[apellidos]" value='<?= $represent['apellidos']?>' placeholder="Apellidos">
   </div>
 </div>
 
 <div class="control-group">
   <label class="control-label" for="represent[cedula]">Cédula</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="represent[cedula]" id="represent[cedula]" placeholder="Cédula">
+    <input class="input-xlarge" type="text" id="represent[cedula]" id="represent[cedula]" value='<?= $represent['cedula']?>' placeholder="Cédula">
   </div>
 </div>
 
@@ -33,21 +33,21 @@
 <div class="control-group">
   <label class="control-label" for="represent[telefono_local]">Télefono local</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="represent[telefono_local]" id="represent[telefono_local]" placeholder="Cédula">
+    <input class="input-xlarge" type="text" id="represent[telefono_local]" id="represent[telefono_local]" value='<?= $represent['telefono_local']?>' placeholder="Cédula">
   </div>
 </div>
 
 <div class="control-group">
   <label class="control-label" for="represent[telefono_celular]">Télefono Celular</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="represent[telefono_celular]" id="represent[telefono_celular]" placeholder="Cédula">
+    <input class="input-xlarge" type="text" id="represent[telefono_celular]" id="represent[telefono_celular]" value='<?= $represent['telefono_celular']?>' placeholder="Cédula">
   </div>
 </div>
 
 <div class="control-group">
   <label class="control-label" for="represent[fecha_nacimiento]">Fecha de Nacimiento</label>
   <div class="controls">
-    <input class="input-xlarge" class='datepicker' type="text" id="represent[fecha_nacimiento]" id="represent[fecha_nacimiento]" placeholder="Fecha de Nacimiento">
+    <input class="input-xlarge" class='datepicker' type="text" id="represent[fecha_nacimiento]" id="represent[fecha_nacimiento]" value='<?= $represent['fecha_nacimiento']?>' placeholder="Fecha de Nacimiento">
   </div>
 </div>
 

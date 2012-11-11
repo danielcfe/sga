@@ -12,10 +12,35 @@ class Periodo extends CI_Model {
   private static $db;
 
 
-  public function get_last_year()
+  public function __construct()
+  {
+    $this->load->helper('form');    
+  }
+
+  public function load($param)
+  {
+    if(is_array($param))
+    {
+      $this->id = $param['id'];
+      $this->ano_escolar = $param['ano_escolar'];
+      $this->ano_inicio = $param['ano_inicio'];
+      $this->ano_fin = $param['ano_fin'];
+    }
+    else
+    {
+      $rs = $this->db->query(self::$sql['load_by_id']);
+      $this->load($rs -> row_array());
+    }
+  }
+  /**
+  * @return Periodo instance
+  */
+  public static function get_last_year()
   {
     $db = self::get_instance_db();
-    $db->query(self::$sql['last_year']);
+    $rs = $db->query(self::$sql['last_year']);
+    $periodo = new Periodo();
+    return $periodo($rs -> row_array());
   }
 
   private static function get_instance_db()
@@ -24,6 +49,6 @@ class Periodo extends CI_Model {
   }
 
   private static $sql = array(
-    'last_year' => 'SELECT * FROM periodo'
+    'last_year' => 'SELECT * FROM periodo ORDER BY last_year DESC'
   );
 }

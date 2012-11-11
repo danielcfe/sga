@@ -1,13 +1,13 @@
 <div class="control-group">
   <label class="control-label" for="alumno[nombres]">Nombres</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id='alumno[nombres]' name='alumno[nombres]' placeholder="nombres">
+    <input class="input-xlarge" type="text" id='alumno[nombres]' name='alumno[nombres]' placeholder="nombres" value='<?= $estudiante['nombres']?>'>
   </div>
 </div>
 <div class="control-group">
   <label class="control-label" for="alumno[apellidos]">Apellidos</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="alumno[apellidos]" id="alumno[apellidos]" placeholder="Apellidos">
+    <input class="input-xlarge" type="text" id="alumno[apellidos]" id="alumno[apellidos]" placeholder="Apellidos" value='<?= $estudiante['apellidos']?>'>
   </div>
 </div>
 <div class="control-group">
@@ -23,30 +23,30 @@
 <div class="control-group">
   <label class="control-label" for="alumno[edad]">Edad</label>
   <div class="controls">
-    <input class="input-xlarge" type="number" id="alumno[edad]" id="alumno[edad]" placeholder="Edad">
+    <input class="input-xlarge" type="number" id="alumno[edad]" id="alumno[edad]" placeholder="Edad" value='<?= $estudiante['edad']?>'>
   </div>
 </div>
 <div class="control-group">
   <label class="control-label" for="alumno[lugar_nacimiento]">Lugar De Nacimiento</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="alumno[lugar_nacimiento]" id="alumno[lugar_nacimiento]" placeholder="Lugar De Nacimiento">
+    <input class="input-xlarge" type="text" id="alumno[lugar_nacimiento]" id="alumno[lugar_nacimiento]" placeholder="Lugar De Nacimiento" value='<?= $estudiante['lugar_nacimiento']?>'>
   </div>
 </div>
  <div class="control-group">
   <label class="control-label" for="alumno[cedula]">Cédula</label>
   <div class="controls">
-    <input class="input-xlarge" type="text" id="alumno[cedula]" id="alumno[cedula]" placeholder="Cédula">
+    <input class="input-xlarge" type="text" id="alumno[cedula]" id="alumno[cedula]" placeholder="Cédula" value='<?= $estudiante['cedula']?>'>
   </div>
 </div>
 
  <div class="control-group">
   <label class="control-label" for="alumno[fecha_nacimiento]">Fecha de Nacimiento</label>
   <div class="controls">
-    <input class="input-xlarge" class='datepicker' type="text" id="alumno[fecha_nacimiento]" id="alumno[fecha_nacimiento]" placeholder="Fecha de Nacimiento">
+    <input class="input-xlarge" class='datepicker' type="text" id="alumno[fecha_nacimiento]" id="alumno[fecha_nacimiento]" placeholder="Fecha de Nacimiento" value='<?= $estudiante['fecha_nacimiento']?>'>
   </div>
 </div>
  <div class="control-group">
-  <label class="control-label" for="alumno[observaciones]">Direccion</label>
+  <label class="control-label" for="alumno[observaciones]">Dirección</label>
   <div class="controls">
     <textarea class="input-xlarge" id="alumno[observaciones]" id="alumno[observaciones]"> </textarea>
   </div>
